@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body {
+            color: white;
+            font: normal 24px arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Inciando estudo com DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div id="msg">Clique em mim</div>
+    <div class="text">Clique em mim</div>
+    <script>
+        /* modificando através do DOM a cor de fundo do corpo(body) */
+        var corpo = window.document.body
+        corpo.style.background = '#58b8f0'
+
+        /* modificando através DOM o código Name */ 
+        var p1 = window.document.getElementsByTagName('p')[0]
+        p1.style.color = 'blue'
+        p1.style.background = 'green'
+
+        /*document.write(p1.innerHTML) - copiar o texto igualmente formatado no HTML */ 
+        /* document.write(p1.innerText) - para copiar o texto limpo, sem qualquer tipo de formatação dentro do html */ 
+        /* document.write(window.navigator.appName) - para especificar o navegador em que está sendo utilizado o site */
+        /*document.write(window.navigator.URL) - utilizado para mostrar a url do servidor no site */ 
+        
+        /* modifiicando através do DOM com o código ID*/
+        var d = window.document.getElementById('msg')
+        d.style.textAlign = 'center'
+        d.style.color = 'black'
+
+        /* modificando através do DOM com código class */ 
+        var t = window.document.getElementsByClassName('text')[0]
+        t.style.textAlign = 'right'
+        t.style.color = 'orange'
+
+        /* modificando através do DOM com o código de seletor, que é o mais recomendado e mais atualizado do momento */
+        var m = window.document.querySelector('div#msg')
+        
+        
+    </script>
+</body>
+</html>

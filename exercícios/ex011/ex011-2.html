@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Pesquisa sobre nacionalidades</h1>
+    Em que país você nasceu ? <input type="text" name="nac" id="nac">
+    <input type="button" value="verificar" onclick="calcular()">
+    <div id="country">
+
+    </div>
+    <script>
+        function calcular(){
+            var país = window.document.querySelector('input#nac')
+            var res = window.document.querySelector('div#country')
+            var nac = String(pais.value)
+            if (país =='Brasil') {
+                res.innerHTML = 'Você é brasileiro'
+            } else {
+                res.innerHTML = 'Você é estrangeiro'
+            }
+    
+        }
+
+    </script>
+</body>
+</html>

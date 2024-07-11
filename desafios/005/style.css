@@ -1,0 +1,15 @@
+header {
+    text-align: left;
+    font: normal 20px arial;
+    text-indent: 5px;
+}
+
+input {
+    padding: 20px;
+    
+}
+
+footer {
+    text-align: center;
+    font-style: italic;
+}
